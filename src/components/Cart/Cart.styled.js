@@ -12,6 +12,12 @@ export const StyledCart = styled.div`
       font-size: 24px;
     }
 
+    &__items {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
     &__total {
       padding: 16px 32px 16px 16px;
       text-align: right;

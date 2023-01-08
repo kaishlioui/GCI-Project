@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledOptionItem = styled.div`
+export const StyledOptionItem = styled.article`
   display: flex;
   flex-direction: column;
   width: 100%;
