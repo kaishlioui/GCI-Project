@@ -8,7 +8,7 @@ import { StyledOptionItem } from "./OptionItem.styled";
 const OptionItem = ({ id, price, name, isAddedToCart }) => {
   const { addCartItem } = useContext(OptionContext);
   return (
-    <StyledOptionItem>
+    <StyledOptionItem role="article">
       <img className="option-item__img" src={`/${id}.jpg`} alt={name} />
       <h3 className="option-item__name">{name}</h3>
       <div className="option-item__price">€{price}</div>
