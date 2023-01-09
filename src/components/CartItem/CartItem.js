@@ -10,7 +10,7 @@ const CartItem = ({ id, price, name }) => {
   const { removeCartItem } = useContext(OptionContext);
   return (
     <StyledCartItem>
-      <img className="cart-item__img" src={`/${id}.jpg`} alt={name} />
+      <img className="cart-item__img" src={`${process.env.PUBLIC_URL}/${id}.jpg`} alt={name} />
       <h3 className="cart-item__name">{name}</h3>
       <div className="cart-item__price">€{price}</div>
       <button className="cart-item__action" onClick={() => removeCartItem({ id, price, name })}>
